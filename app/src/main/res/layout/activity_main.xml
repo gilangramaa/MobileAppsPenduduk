@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--judul-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Penduduk"
+        android:textSize="25dp"
+        android:textColor="#D8D4D4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/tvjd"/>
+
+    <!--NAMA-->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nama"
+        android:ems="15"
+        android:textAlignment="textStart"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/tvjd"
+        android:layout_marginTop="15dp"
+        android:id="@+id/etnm"/>
+
+    <!--NIK-->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan NIK"
+        android:ems="15"
+        android:textAlignment="textStart"
+        android:layout_centerHorizontal="true"
+        android:inputType="text|number"
+        android:layout_below="@+id/etnm"
+        android:layout_marginTop="15dp"
+        android:id="@+id/etem"/>
+
+    <!--KODE DESA-->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Kode Desa"
+        android:ems="15"
+        android:textAlignment="textStart"
+        android:layout_centerHorizontal="true"
+        android:inputType="text|number"
+        android:layout_below="@+id/etem"
+        android:layout_marginTop="15dp"
+        android:id="@+id/etus"/>
+
+    <!--NAMA DESA-->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nama Desa"
+        android:ems="15"
+        android:textAlignment="textStart"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/etus"
+        android:layout_marginTop="15dp"
+        android:id="@+id/etal"/>
+
+    <!--ALAMAT-->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Alamat"
+        android:ems="15"
+        android:textAlignment="textStart"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/etal"
+        android:layout_marginTop="15dp"
+        android:id="@+id/etai"/>
+
+    <!--jenis kelamin-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis kelamin"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etai"
+        android:layout_marginTop="10dp"
+        android:id="@+id/etjk"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rg"
+        android:layout_below="@+id/etjk">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="laki-laki"
+            android:id="@+id/rg1"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="perempuan"
+            android:id="@+id/rg2"
+            android:layout_marginLeft="30dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rg"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn"
+        android:onClick="submit"/>
+
+</RelativeLayout>
+
+
